@@ -17,7 +17,7 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 | **gastown** | ⚠️ No swap, but auto-restart | ✅ Daemon (heartbeat) | ⚠️ Waits for Beads | ✅ **Git Worktrees** |
 | **ralph-orchestrator** | ⚠️ Retries + Rollback, no swap | ✅ Loop until condition/budget | ⚠️ Exits | ⚠️ Host (git checkpoints) |
 | **ccswarm** | ⚠️ Predictive patterns, no swap | ✅ Proactive Master + ACP | ✅ Task prediction | ⚠️ Host (ACP to Claude) |
-| **swarms** | ✅ **SwarmRouter** (dynamic) | ✅ Many patterns | ❌ Framework exits | ⚠️ SDK-level |
+| **swarms** | ✅ **fallback_models** (auto-swap) | ✅ Many patterns | ❌ Framework exits | ⚠️ SDK-level |
 | **autogen** | ⚠️ User must implement swap | ✅ Loops + UserProxy | ✅ Can generate tasks | ✅ **Docker** (encouraged) |
 | **OpenHands** | ⚠️ Configurable limits | ✅ Headless/stateful | ❌ Exits | ✅ **Docker Containers** |
 | **crewAI** | ⚠️ Via Flows router | ✅ Flows (continuous) | ❌ Crew exits | ✅ **Docker** (safe mode) |
@@ -52,12 +52,13 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 
 | Question | Answer |
 |:---------|:-------|
-| **Limit Handling** | ✅ **Best-in-class**. Monitors Claude Pro usage via `claude /usage`. Has configurable thresholds (e.g., pause at 20% day, 96% night). Pauses execution until quota resets. Does NOT swap to a different LLM, but intelligently schedules work around limits. |
+| **Limit Handling** | ✅ **Best-in-class (Code-verified)**. `ProPlanUsageChecker` monitors Claude Pro usage via `claude usage` command. `SmartScheduler` has configurable day/night thresholds: `threshold_day=20%`, `threshold_night=80%`. When `usage_percent >= effective_threshold`, sets `usage_pause_until` to wait for reset. Does NOT swap models, but intelligently schedules work around limits. |
 | **Autonomy** | ✅ Runs 24/7 as a background daemon. Uses Planner → Worker → Evaluator flow. Slack integration for pushing tasks. |
-| **Task Exhaustion** | ✅ **Auto-generation**: Can generate "Random Thoughts" or "Refinement" tasks to keep working when queue is empty. |
-| **Isolation** | ⚠️ Workspace directories per task. No Docker. |
+| **Task Exhaustion** | ✅ **Auto-generation (Code-verified)**: `AutoTaskGenerator` class creates tasks when usage is below threshold. `should_backfill_with_random_thoughts()` fills idle time. Generates "refinement" or "new" tasks based on weighted prompt selection. |
+| **Isolation** | ⚠️ Workspace directories per task (`workspace/tasks/{id}`). No Docker. |
 
 ---
+
 
 ### 2. gastown
 
@@ -96,12 +97,13 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 
 | Question | Answer |
 |:---------|:-------|
-| **Limit Handling** | ✅ **SwarmRouter** dynamically routes to different architectures. "Auto" mode can select swarm type. Allows configuring different models per agent. |
+| **Limit Handling** | ✅ **Best-in-class (Code-verified)**. The `Agent` class has `fallback_models: List[str]` parameter. When primary model fails, `_handle_fallback_execution()` automatically tries each fallback model in sequence until success. Example: `Agent(fallback_models=["gpt-4.1", "gpt-4o-mini", "gpt-3.5-turbo"])`. Also has **SwarmRouter** for dynamic architecture selection. |
 | **Autonomy** | ✅ Supports many patterns (Sequential, Hierarchical, MoA). Can run autonomous loops. |
 | **Task Exhaustion** | ❌ Framework exits when workflow completes. User must trigger new runs. |
 | **Isolation** | ⚠️ SDK/library level. No enforced containerization. |
 
 ---
+
 
 ### 6. autogen (Microsoft)
 
@@ -384,7 +386,7 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 
 | Question | Top Orchestrators |
 |:---------|:------------------|
-| **Limit Handling/Swap** | `sleepless-agent` (usage monitoring), `claude-task-master` (fallback models), `swarms` (SwarmRouter) |
+| **Limit Handling/Swap** | `swarms` (fallback_models auto-swap), `sleepless-agent` (usage monitoring), `claude-task-master` (fallback models config) |
 | **24/7 Autonomy** | `sleepless-agent`, `sugar`, `gastown`, `Maestro` (Auto Run), `ccswarm` (Proactive Master) |
 | **Task Exhaustion** | `sleepless-agent` (auto-generation), `sugar` (queue polling), `ccswarm` (task prediction), `Maestro` (reset loops) |
 | **Isolation** | `OpenHands` (Docker), `SWE-agent` (Docker), `crewAI` (Docker safe mode), `gastown`/`claude-squad`/`crystal`/`superset`/`Maestro`/`Auto-Claude` (Git Worktrees) |
