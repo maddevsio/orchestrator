@@ -45,6 +45,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**ralph-orchestrator**](ralph-orchestrator_report.md) | CLI (Python) | "The Ralph Loop" | Git Checkpointing | ✅ **ACP Support** | ✅ **Scratchpad** |
 | [**agent-orchestrator**](agent-orchestrator_report.md) | CLI (Python) | Task Queue + Daemon | Workspace Dir | ✅ **Daemon + Auto-Retry** | ⚠️ **Retries** (No swap) |
 | [**get-shit-done**](get-shit-done_report.md) | Claude Code Slash Commands | Subagent Orchestration | Context Isolation | ✅ **Parallel Subagents** | ✅ **Fresh Context** (200k/plan) |
+| [**claude-code-workflow**](claude-code-workflow_report.md) | Multi-Agent Framework | Multi-CLI (Gemini/Qwen/Codex) | JSON State | ✅ **Autonomous Orchestration** | ✅ **Multi-Model** |
 
 ## Detailed Reports
 
@@ -85,3 +86,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[agent-orchestrator](agent-orchestrator_report.md)**: Lightweight file-based task queue with daemon mode and auto-retry.
 *   **[agor](agor_report.md)**: "Figma for AI coding" - multiplayer spatial canvas with zone triggers and session trees.
 *   **[get-shit-done](get-shit-done_report.md)**: Spec-driven Claude Code system with subagent orchestration and context engineering.
+*   **[claude-code-workflow](claude-code-workflow_report.md)**: Comprehensive multi-agent framework with multi-CLI (Gemini/Qwen/Codex) orchestration and dashboard.
