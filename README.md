@@ -10,6 +10,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**AutoCodeRover**](https://github.com/AutoCodeRoverSG/auto-code-rover) | Python | Specialize Repair Loop | Docker / Local | ✅ **Yes** (Iterative Repair) | N/A (Specialized Tool) |
 | [**SWE-agent**](https://github.com/SWE-agent/SWE-agent) | Python | ACI / ReAct Loop | Docker (SWEEnv) | ✅ **Yes** (Retry Loops) | N/A (One-Shot / Retry) |
 | [**swarms**](https://github.com/kyegomez/swarms) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
+| [**ccswarm**](https://github.com/nwiizo/ccswarm) | Rust | Proactive Master / ACP | Binary / Claude Code | ✅ **Yes** (Dependnecy Graph) | ✅ **Predictive** (Pattern-based) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
