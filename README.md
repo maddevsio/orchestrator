@@ -36,6 +36,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**superset**](superset_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**emdash**](emdash_report.md) | Desktop App (Electron) | Parallel Sessions (15+ providers) | Git Worktrees | ⚠️ **Session-level** | ❌ **Manual** |
+| [**agor**](agor_report.md) | Web App (Figma-style) | Spatial Canvas + Zone Triggers | Git Worktrees + Ports | ⚠️ **Zone Triggers** | ❌ **Manual** |
 | [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
 | [**claude-task-master**](claude-task-master_report.md) | MCP Server | Human-led / Tool-use | Local Filesystem | ✅ **Explicit** (Task List) | ✅ **Yes** (Selective Loading) |
 | [**cc-mirror**](cc-mirror_report.md) | Wrapper (CLI Patch) | Conductor Persona | Local Filesystem | ✅ **Yes** (Hidden Task Mode) | ✅ **Yes** (Worker Models) |
@@ -81,3 +82,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[OWL](owl_report.md)**: GAIA benchmark #1 framework using Role-Playing (User + Assistant) for complex task automation.
 *   **[emdash](emdash_report.md)**: YC W26 backed desktop app supporting 15+ CLI providers with Git worktree isolation.
 *   **[agent-orchestrator](agent-orchestrator_report.md)**: Lightweight file-based task queue with daemon mode and auto-retry.
+*   **[agor](agor_report.md)**: "Figma for AI coding" - multiplayer spatial canvas with zone triggers and session trees.
