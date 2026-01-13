@@ -42,6 +42,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**claude-code-by-agents**](claude-code-by-agents_report.md) | Web UI / App | Central Orchestrator | Local/Remote Processes | ✅ **Mention-based** | ✅ **Specialized Contexts** |
 | [**claude-squad**](claude-squad_report.md) | CLI / TUI (Go) | Human-led / Daemon | Tmux + Git Worktrees | ✅ **Process-level** | ❌ **Manual** |
 | [**ralph-orchestrator**](ralph-orchestrator_report.md) | CLI (Python) | "The Ralph Loop" | Git Checkpointing | ✅ **ACP Support** | ✅ **Scratchpad** |
+| [**agent-orchestrator**](agent-orchestrator_report.md) | CLI (Python) | Task Queue + Daemon | Workspace Dir | ✅ **Daemon + Auto-Retry** | ⚠️ **Retries** (No swap) |
 
 ## Detailed Reports
 
@@ -79,3 +80,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[MetaGPT](metagpt_report.md)**: Multi-agent framework simulating a software company with strict SOPs (Code = SOP(Team)).
 *   **[OWL](owl_report.md)**: GAIA benchmark #1 framework using Role-Playing (User + Assistant) for complex task automation.
 *   **[emdash](emdash_report.md)**: YC W26 backed desktop app supporting 15+ CLI providers with Git worktree isolation.
+*   **[agent-orchestrator](agent-orchestrator_report.md)**: Lightweight file-based task queue with daemon mode and auto-retry.
