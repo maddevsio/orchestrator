@@ -26,6 +26,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**cc-mirror**](cc-mirror_report.md) | Wrapper (CLI Patch) | Conductor Persona | Local Filesystem | ✅ **Yes** (Hidden Task Mode) | ✅ **Yes** (Worker Models) |
 | [**claude-code-by-agents**](claude-code-by-agents_report.md) | Web UI / App | Central Orchestrator | Local/Remote Processes | ✅ **Mention-based** | ✅ **Specialized Contexts** |
 | [**claude-squad**](claude-squad_report.md) | CLI / TUI (Go) | Human-led / Daemon | Tmux + Git Worktrees | ✅ **Process-level** | ❌ **Manual** |
+| [**ralph-orchestrator**](ralph-orchestrator_report.md) | CLI (Python) | "The Ralph Loop" | Git Checkpointing | ✅ **ACP Support** | ✅ **Scratchpad** |
 
 ## Detailed Reports
 
@@ -51,3 +52,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[cc-mirror](cc-mirror_report.md)**: "Claude Code Unshackled" - Wrapper that unlocks hidden multi-agent/team modes and injects an Orchestrator persona.
 *   **[claude-code-by-agents](claude-code-by-agents_report.md)**: "Agentrooms" - A Web/Electron UI that wraps Claude Code SDK to create a multi-agent workspace with local and remote agents.
 *   **[claude-squad](claude-squad_report.md)**: Go-based TUI for managing multiple isolated CLI agents using tmux and git worktrees.
+*   **[ralph-orchestrator](ralph-orchestrator_report.md)**: A robust "Manager" loop for CLI agents (Claude, Gemini, ACP) with retries, budget enforcement, and git-based time travel.
