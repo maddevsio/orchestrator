@@ -24,6 +24,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
 | [**claude-task-master**](claude-task-master_report.md) | MCP Server | Human-led / Tool-use | Local Filesystem | ✅ **Explicit** (Task List) | ✅ **Yes** (Selective Loading) |
 | [**cc-mirror**](cc-mirror_report.md) | Wrapper (CLI Patch) | Conductor Persona | Local Filesystem | ✅ **Yes** (Hidden Task Mode) | ✅ **Yes** (Worker Models) |
+| [**claude-code-by-agents**](claude-code-by-agents_report.md) | Web UI / App | Central Orchestrator | Local/Remote Processes | ✅ **Mention-based** | ✅ **Specialized Contexts** |
 
 ## Detailed Reports
 
@@ -47,3 +48,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[OpenHands](openhands_report.md)**: Autonomous software development agent running in sandboxed Docker containers.
 *   **[claude-task-master](claude-task-master_report.md)**: MCP Server acting as a "Project Manager" for AI agents, maintaining state via structured task lists.
 *   **[cc-mirror](cc-mirror_report.md)**: "Claude Code Unshackled" - Wrapper that unlocks hidden multi-agent/team modes and injects an Orchestrator persona.
+*   **[claude-code-by-agents](claude-code-by-agents_report.md)**: "Agentrooms" - A Web/Electron UI that wraps Claude Code SDK to create a multi-agent workspace with local and remote agents.
