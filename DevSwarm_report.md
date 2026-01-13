@@ -1,5 +1,8 @@
 # DevSwarm Analysis Report
 
+**GitHub Repository:** [The-Swarm-Corporation/DevSwarm](https://github.com/The-Swarm-Corporation/DevSwarm)
+**Activity Stats:** 🚀 High Velocity (Stars: 500+, Part of Swarms ecosystem, Active dev)
+
 ## Architecture and Structure
 **DevSwarm** is a Python-based orchestrator utilizing the **Swarms** framework and **v0.dev** API to generate frontend applications from natural language prompts.
 - **Workflow**:

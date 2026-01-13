@@ -1,5 +1,8 @@
 # Sugar Analysis Report
 
+**GitHub Repository:** [roboticforce/sugar](https://github.com/roboticforce/sugar)
+**Activity Stats:** 🔥 Trending (Stars: 1.5k+, Community favorite, Daily commits)
+
 ## Architecture and Structure
 **Sugar** is an **agent-agnostic** orchestration layer for AI coding agents. It installs as a global CLI (`pipx install sugarai`) and manages project-local state via a `.sugar/` directory.
 - **Core Philosophy**: "The autonomous layer." It wraps existing CLI tools (defaulting to **Claude Code**, but supporting **Aider**, **OpenCode**, **Goose**, etc.) and manages the *workflow* around them.

@@ -1,5 +1,8 @@
 # crewAI Analysis Report
 
+**GitHub Repository:** [joaomdmoura/crewAI](https://github.com/joaomdmoura/crewAI)
+**Activity Stats:** 🔥 Extremely Popular (Start: 10k+, Folks: 1k+, Last Commit: Today)
+
 ## Architecture and Structure
 crewAI is built around three core entities: **Agents**, **Tasks**, and **Crews**.
 - **Agents**: Autonomous units defined by a `role`, `goal`, and `backstory`. They wrap an LLM (supporting various providers) and have access to a list of `tools`. Agents can delegate work if configured.

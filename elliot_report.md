@@ -1,5 +1,8 @@
 # Elliot Analysis Report
 
+**GitHub Repository:** [Think-a-Tron/elliot](https://github.com/Think-a-Tron/elliot)
+**Activity Stats:** 🐣 Early Stage (Stars: <50, New project, Promising architecture)
+
 ## Architecture and Structure
 **Elliot** is a Python package and CLI that orchestrates a team of specialist coding agents using the **openai-agents** library.
 - **Orchestrator**: The "Elliot" agent acts as the manager. It typically uses a high-intelligence model (e.g., `gpt-4o` or similar).

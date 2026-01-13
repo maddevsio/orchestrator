@@ -1,5 +1,8 @@
 # systemprompt-code-orchestrator Analysis Report
 
+**GitHub Repository:** [systemprompt/systemprompt-code-orchestrator](https://github.com/systemprompt/systemprompt-code-orchestrator)
+**Activity Stats:** ⚪️ Niche (Stars: <50, Specialized usage, Occasional updates)
+
 ## Architecture and Structure
 **systemprompt-code-orchestrator** turns a local workstation into a remotely accessible **MCP Server**.
 - **Components**:

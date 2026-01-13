@@ -1,5 +1,8 @@
 # claude-flow Analysis Report
 
+**GitHub Repository:** [pashpashpash/claude-flow](https://github.com/pashpashpash/claude-flow)
+**Activity Stats:** 🟡 Moderate (Stars: 50+, Specialized niche, Recent activity)
+
 ## Architecture and Structure
 **claude-flow** is an orchestration platform specifically designed to enhance **Claude Code**. It operates primarily as a set of **MCP (Model Context Protocol)** servers and a CLI wrapper that injects capabilities into the Claude Code session.
 - **Core Components**:

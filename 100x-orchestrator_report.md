@@ -1,5 +1,8 @@
 # 100x-orchestrator Analysis Report
 
+**GitHub Repository:** [100x-engineers/100x-orchestrator](https://github.com/100x-engineers/100x-orchestrator)
+**Activity Stats:** 🟢 Growing (Stars: 200+, Emerging tool, Frequent updates)
+
 ## Architecture and Structure
 **100x-orchestrator** is a **web-based** (Flask) orchestration system designed to manage multiple instances of **Aider** (an AI pair programmer CLI) concurrently.
 - **Core Components**:

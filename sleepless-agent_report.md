@@ -1,5 +1,8 @@
 # Sleepless Agent Analysis Report
 
+**GitHub Repository:** [context-machine-lab/sleepless-agent](https://github.com/context-machine-lab/sleepless-agent)
+**Activity Stats:** 🧪 Research Grade (Stars: 100+, Academic/Lab backed, Stable)
+
 ## Architecture and Structure
 **Sleepless Agent** is a **24/7 AgentOS** designed to run as a background daemon, wrapping the **Claude Code CLI**.
 - **Interface**: Primarily interacted with via **Slack** (`/think`, `/chat`, `/check`).

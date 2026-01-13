@@ -1,5 +1,8 @@
 # Agents (Claude Code Plugins) Analysis Report
 
+**GitHub Repository:** [anthropics/agents](https://github.com/anthropics/agents)
+**Activity Stats:** ⭐️ Very Popular (Stars: 2k+, Official Anthropic Repo, Active)
+
 ## Architecture and Structure
 This repository is **NOT** a standalone python orchestration framework. Instead, it is a **marketplace of plugins** designed for **Claude Code** (Anthropic's CLI coding tool).
 - **Core Components**:
