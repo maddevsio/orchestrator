@@ -46,6 +46,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**agent-orchestrator**](agent-orchestrator_report.md) | CLI (Python) | Task Queue + Daemon | Workspace Dir | ✅ **Daemon + Auto-Retry** | ⚠️ **Retries** (No swap) |
 | [**get-shit-done**](get-shit-done_report.md) | Claude Code Slash Commands | Subagent Orchestration | Context Isolation | ✅ **Parallel Subagents** | ✅ **Fresh Context** (200k/plan) |
 | [**claude-code-workflow**](claude-code-workflow_report.md) | Multi-Agent Framework | Multi-CLI (Gemini/Qwen/Codex) | JSON State | ✅ **Autonomous Orchestration** | ✅ **Multi-Model** |
+| [**continuous-claude**](continuous-claude_report.md) | Bash CLI Wrapper | While Loop + Git + PR | Git Worktrees | ✅ **24/7 Loop** | ✅ **Budget Control** |
 
 ## Detailed Reports
 
@@ -87,3 +88,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[agor](agor_report.md)**: "Figma for AI coding" - multiplayer spatial canvas with zone triggers and session trees.
 *   **[get-shit-done](get-shit-done_report.md)**: Spec-driven Claude Code system with subagent orchestration and context engineering.
 *   **[claude-code-workflow](claude-code-workflow_report.md)**: Comprehensive multi-agent framework with multi-CLI (Gemini/Qwen/Codex) orchestration and dashboard.
+*   **[continuous-claude](continuous-claude_report.md)**: Persistent "While loop + Git + PR" wrapper for 24/7 Claude automation with budget controls.
