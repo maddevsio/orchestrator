@@ -19,6 +19,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**CAO**](cli-agent-orchestrator_report.md) | Server (Python/FastAPI) | Hierarchical + Flows | Host (tmux) | ✅ **Partially** (Scheduled Flows) | ⚠️ **Timeouts** (Handoff timeouts) |
 | [**agent-squad**](agent-squad_report.md) | Framework (Py/TS) | Intelligent Routing | Framework-defined | ⚠️ **Deployment Dep.** (Lambda vs Long-running) | ❌ **No** (Framework hooks only) |
 | [**autogen**](autogen_report.md) | Framework (Py/.NET) | Group Chat / Swarm | Docker / Local | ✅ **Yes** (Loops + UserProxy) | ✅ **Yes** (Max Rounds / Tool Iterations) |
+| [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 
 ## Detailed Reports
 
@@ -37,3 +38,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[cli-agent-orchestrator](cli-agent-orchestrator_report.md)**: Lightweight tmux-based orchestration with MCP and scheduled flows.
 *   **[agent-squad](agent-squad_report.md)**: Flexible framework for building multi-agent systems with intelligent routing.
 *   **[autogen](autogen_report.md)**: Comprehensive framework for multi-agent conversational applications (Microsoft).
+*   **[crystal](crystal_report.md)**: Desktop manager for parallel Claude Code/Codex sessions using git worktrees.
