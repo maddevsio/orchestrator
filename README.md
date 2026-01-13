@@ -44,6 +44,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**claude-squad**](claude-squad_report.md) | CLI / TUI (Go) | Human-led / Daemon | Tmux + Git Worktrees | ✅ **Process-level** | ❌ **Manual** |
 | [**ralph-orchestrator**](ralph-orchestrator_report.md) | CLI (Python) | "The Ralph Loop" | Git Checkpointing | ✅ **ACP Support** | ✅ **Scratchpad** |
 | [**agent-orchestrator**](agent-orchestrator_report.md) | CLI (Python) | Task Queue + Daemon | Workspace Dir | ✅ **Daemon + Auto-Retry** | ⚠️ **Retries** (No swap) |
+| [**get-shit-done**](get-shit-done_report.md) | Claude Code Slash Commands | Subagent Orchestration | Context Isolation | ✅ **Parallel Subagents** | ✅ **Fresh Context** (200k/plan) |
 
 ## Detailed Reports
 
@@ -83,3 +84,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[emdash](emdash_report.md)**: YC W26 backed desktop app supporting 15+ CLI providers with Git worktree isolation.
 *   **[agent-orchestrator](agent-orchestrator_report.md)**: Lightweight file-based task queue with daemon mode and auto-retry.
 *   **[agor](agor_report.md)**: "Figma for AI coding" - multiplayer spatial canvas with zone triggers and session trees.
+*   **[get-shit-done](get-shit-done_report.md)**: Spec-driven Claude Code system with subagent orchestration and context engineering.
