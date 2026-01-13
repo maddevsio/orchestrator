@@ -18,6 +18,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**gastown**](gastown_report.md) | Daemon (Go) | Hierarchical (Mayor->Polecat) | Git Worktree | ✅ **Yes** (Self-healing Daemon) | ⚠️ **Available** (Configurable runtimes) |
 | [**CAO**](cli-agent-orchestrator_report.md) | Server (Python/FastAPI) | Hierarchical + Flows | Host (tmux) | ✅ **Partially** (Scheduled Flows) | ⚠️ **Timeouts** (Handoff timeouts) |
 | [**agent-squad**](agent-squad_report.md) | Framework (Py/TS) | Intelligent Routing | Framework-defined | ⚠️ **Deployment Dep.** (Lambda vs Long-running) | ❌ **No** (Framework hooks only) |
+| [**autogen**](autogen_report.md) | Framework (Py/.NET) | Group Chat / Swarm | Docker / Local | ✅ **Yes** (Loops + UserProxy) | ✅ **Yes** (Max Rounds / Tool Iterations) |
 
 ## Detailed Reports
 
@@ -35,3 +36,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[gastown](gastown_report.md)**: 24/7 workspace manager with git-worktree persistence.
 *   **[cli-agent-orchestrator](cli-agent-orchestrator_report.md)**: Lightweight tmux-based orchestration with MCP and scheduled flows.
 *   **[agent-squad](agent-squad_report.md)**: Flexible framework for building multi-agent systems with intelligent routing.
+*   **[autogen](autogen_report.md)**: Comprehensive framework for multi-agent conversational applications (Microsoft).
