@@ -11,6 +11,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**SWE-agent**](https://github.com/SWE-agent/SWE-agent) | Python | ACI / ReAct Loop | Docker (SWEEnv) | ✅ **Yes** (Retry Loops) | N/A (One-Shot / Retry) |
 | [**swarms**](https://github.com/kyegomez/swarms) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
 | [**ccswarm**](https://github.com/nwiizo/ccswarm) | Rust | Proactive Master / ACP | Binary / Claude Code | ✅ **Yes** (Dependnecy Graph) | ✅ **Predictive** (Pattern-based) |
+| [**Maestro**](https://github.com/pedramamini/Maestro) | TypeScript | Desktop App / Playbooks | Electron App | ✅ **Yes** (Auto Run Loops) | ❌ **Manual** (Playbooks) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -62,3 +63,5 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[AutoCodeRover](auto-code-rover_report.md)**: Autonomous repair tool with AST-aware search and iterative test-driven patching.
 *   **[SWE-agent](swe-agent_report.md)**: ACI-based agent for GitHub issues, using Docker containers for reproducible execution.
 *   **[swarms](swarms_report.md)**: Enterprise-grade framework with a massive library of architectures and a universal SwarmRouter.
+*   **[ccswarm](ccswarm_report.md)**: Rust-native orchestrator for Claude Code with "Proactive Master" and ACP integration.
+*   **[Maestro](maestro_report.md)**: Desktop app for orchestrating parallel AI agents with Auto Run playbooks and Git Worktree integration.
