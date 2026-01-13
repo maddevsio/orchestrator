@@ -15,6 +15,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**sugar**](sugar_report.md) | CLI Wrapper (Python) | 4-Stage (Research->Plan) | Host (Wrapper) | ✅ **Yes** (Explicit infinite run loop) | ⚠️ **Retries** (Automatic retries, no swap) |
 | [**sleepless**](sleepless-agent_report.md) | Daemon (Python) | Sequential (Plan->Work) | Workspace Dir | ✅ **Yes** (Daemon + Auto-Task Gen) | ✅ **Smart Pause** (Monitors Pro Plan limits) |
 | [**elliot**](elliot_report.md) | CLI (Python/Swarm) | Hierarchical (Sub-agents) | Local Safeguards | ❌ **No** (Local/Interactive CLI) | ❌ **None** (Max turns limit only) |
+| [**gastown**](gastown_report.md) | Daemon (Go) | Hierarchical (Mayor->Polecat) | Git Worktree | ✅ **Yes** (Self-healing Daemon) | ⚠️ **Available** (Configurable runtimes) |
 
 ## Detailed Reports
 
@@ -29,3 +30,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[sugar](sugar_report.md)**: Agent-agnostic autonomous loop.
 *   **[sleepless-agent](sleepless-agent_report.md)**: 24/7 daemon with usage monitoring.
 *   **[elliot](elliot_report.md)**: Hierarchical sub-agent orchestrator.
+*   **[gastown](gastown_report.md)**: 24/7 workspace manager with git-worktree persistence.
