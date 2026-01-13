@@ -10,16 +10,16 @@ This repository contains detailed analysis reports for various AI coding agent o
 
 | Orchestrator | Core Architecture | Planning Mechanism | Isolation | 24/7 Autonomy (Revival) | Limit Handling / Agent Swap |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| [**Swarm**](https://github.com/parruda/swarm) | Ruby | Single-Process (Async) | SDK / CLI | ❌ **No** (Interactive) | ❌ **None** |
-| [**AutoCodeRover**](https://github.com/AutoCodeRoverSG/auto-code-rover) | Python | Specialize Repair Loop | Docker / Local | ✅ **Yes** (Iterative Repair) | N/A (Specialized Tool) |
-| [**SWE-agent**](https://github.com/SWE-agent/SWE-agent) | Python | ACI / ReAct Loop | Docker (SWEEnv) | ✅ **Yes** (Retry Loops) | N/A (One-Shot / Retry) |
-| [**swarms**](https://github.com/kyegomez/swarms) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
-| [**ccswarm**](https://github.com/nwiizo/ccswarm) | Rust | Proactive Master / ACP | Binary / Claude Code | ✅ **Yes** (Dependnecy Graph) | ✅ **Predictive** (Pattern-based) |
-| [**Maestro**](https://github.com/pedramamini/Maestro) | TypeScript | Desktop App / Playbooks | Electron App | ✅ **Yes** (Auto Run Loops) | ❌ **Manual** (Playbooks) |
-| [**Auto-Claude**](https://github.com/AndyMik90/Auto-Claude) | Python | Plan->Code Loop | Electron App | ✅ **Yes** (Graphiti Memory) | ✅ **Structured** (Subtasks) |
-| [**CodeMachine**](https://github.com/moazbuilds/CodeMachine-CLI) | TypeScript | State Machine Workflows | CLI (TUI) | ✅ **Yes** (Input/Context) | ✅ **Dynamic** (Tracks/Conditions) |
-| [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) | Python | SOP-based Software Company | CLI / Library | ✅ **Yes** (Shared Env) | ✅ **SOP-Driven** (Waterfall/Agile) |
-| [**OWL**](https://github.com/camel-ai/owl) | Python | Role-Playing (User+Asst.) | CLI / Web UI | ✅ **Yes** (15 Rounds) | ⚠️ **Round Limit** (15 per session) |
+| [**Swarm**](parruda_swarm_report.md) | Ruby | Single-Process (Async) | SDK / CLI | ❌ **No** (Interactive) | ❌ **None** |
+| [**AutoCodeRover**](auto-code-rover_report.md) | Python | Specialize Repair Loop | Docker / Local | ✅ **Yes** (Iterative Repair) | N/A (Specialized Tool) |
+| [**SWE-agent**](swe-agent_report.md) | Python | ACI / ReAct Loop | Docker (SWEEnv) | ✅ **Yes** (Retry Loops) | N/A (One-Shot / Retry) |
+| [**swarms**](swarms_report.md) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
+| [**ccswarm**](ccswarm_report.md) | Rust | Proactive Master / ACP | Binary / Claude Code | ✅ **Yes** (Dependnecy Graph) | ✅ **Predictive** (Pattern-based) |
+| [**Maestro**](maestro_report.md) | TypeScript | Desktop App / Playbooks | Electron App | ✅ **Yes** (Auto Run Loops) | ❌ **Manual** (Playbooks) |
+| [**Auto-Claude**](auto-claude_report.md) | Python | Plan->Code Loop | Electron App | ✅ **Yes** (Graphiti Memory) | ✅ **Structured** (Subtasks) |
+| [**CodeMachine**](codemachine_report.md) | TypeScript | State Machine Workflows | CLI (TUI) | ✅ **Yes** (Input/Context) | ✅ **Dynamic** (Tracks/Conditions) |
+| [**MetaGPT**](metagpt_report.md) | Python | SOP-based Software Company | CLI / Library | ✅ **Yes** (Shared Env) | ✅ **SOP-Driven** (Waterfall/Agile) |
+| [**OWL**](owl_report.md) | Python | Role-Playing (User+Asst.) | CLI / Web UI | ✅ **Yes** (15 Rounds) | ⚠️ **Round Limit** (15 per session) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -35,7 +35,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**autogen**](autogen_report.md) | Framework (Py/.NET) | Group Chat / Swarm | Docker / Local | ✅ **Yes** (Loops + UserProxy) | ✅ **Yes** (Max Rounds / Tool Iterations) |
 | [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**superset**](superset_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
-| [**emdash**](https://github.com/generalaction/emdash) | Desktop App (Electron) | Parallel Sessions (15+ providers) | Git Worktrees | ⚠️ **Session-level** | ❌ **Manual** |
+| [**emdash**](emdash_report.md) | Desktop App (Electron) | Parallel Sessions (15+ providers) | Git Worktrees | ⚠️ **Session-level** | ❌ **Manual** |
 | [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
 | [**claude-task-master**](claude-task-master_report.md) | MCP Server | Human-led / Tool-use | Local Filesystem | ✅ **Explicit** (Task List) | ✅ **Yes** (Selective Loading) |
 | [**cc-mirror**](cc-mirror_report.md) | Wrapper (CLI Patch) | Conductor Persona | Local Filesystem | ✅ **Yes** (Hidden Task Mode) | ✅ **Yes** (Worker Models) |
