@@ -7,6 +7,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | Orchestrator | Core Architecture | Planning Mechanism | Isolation | 24/7 Autonomy (Revival) | Limit Handling / Agent Swap |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | [**Swarm**](https://github.com/parruda/swarm) | Ruby | Single-Process (Async) | SDK / CLI | ❌ **No** (Interactive) | ❌ **None** |
+| [**AutoCodeRover**](https://github.com/AutoCodeRoverSG/auto-code-rover) | Python | Specialize Repair Loop | Docker / Local | ✅ **Yes** (Iterative Repair) | N/A (Specialized Tool) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -55,3 +56,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[claude-squad](claude-squad_report.md)**: Go-based TUI for managing multiple isolated CLI agents using tmux and git worktrees.
 *   **[ralph-orchestrator](ralph-orchestrator_report.md)**: A robust "Manager" loop for CLI agents (Claude, Gemini, ACP) with retries, budget enforcement, and git-based time travel.
 *   **[Swarm](parruda_swarm_report.md)**: Ruby-based single-process orchestrator with semantic memory and workflows.
+*   **[AutoCodeRover](auto-code-rover_report.md)**: Autonomous repair tool with AST-aware search and iterative test-driven patching.
