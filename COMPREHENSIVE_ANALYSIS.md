@@ -43,6 +43,7 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 | **superset** | ❌ Manual | ⚠️ Background PTYs | ❌ User-driven | ✅ **Git Worktrees** |
 | **claude-task-master** | ✅ Fallback models config | ⚠️ MCP tool-driven | ✅ Task list persists | ❌ Host |
 | **claude-code-by-agents** | ⚠️ Subscription-based | ⚠️ Remote agents | ⚠️ Orchestrator routes | ⚠️ Process separation |
+| **emdash** | ❌ Manual (15+ providers) | ⚠️ Session-level | ❌ User-driven | ✅ **Git Worktrees** |
 
 ---
 
@@ -377,6 +378,17 @@ This document provides a detailed answer for each analyzed orchestrator on the f
 | **Autonomy** | ⚠️ Remote agents can run independently. Orchestrator routes via mentions. |
 | **Task Exhaustion** | ⚠️ Orchestrator analyzes requests and creates plans. Waits for user input. |
 | **Isolation** | ⚠️ Process separation. Remote agents on different machines. No sandbox. |
+
+---
+
+### 31. emdash
+
+| Question | Answer |
+|:---------|:-------|
+| **Limit Handling** | ❌ **None**. Provider-agnostic (15+ CLIs). Delegates limit handling to underlying agent. No swap logic. |
+| **Autonomy** | ⚠️ **Session-level**. Each agent runs in its own PTY. `autoApprove` mode skips prompts. No daemon. |
+| **Task Exhaustion** | ❌ **User-driven**. User must create new tasks. Issue tracker integration (Linear, GitHub, Jira) for ticket import. |
+| **Isolation** | ✅ **Git Worktrees** (core feature). Each task gets dedicated worktree. `.env` files auto-copied. |
 
 ---
 

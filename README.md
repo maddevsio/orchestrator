@@ -35,6 +35,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**autogen**](autogen_report.md) | Framework (Py/.NET) | Group Chat / Swarm | Docker / Local | ✅ **Yes** (Loops + UserProxy) | ✅ **Yes** (Max Rounds / Tool Iterations) |
 | [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**superset**](superset_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
+| [**emdash**](https://github.com/generalaction/emdash) | Desktop App (Electron) | Parallel Sessions (15+ providers) | Git Worktrees | ⚠️ **Session-level** | ❌ **Manual** |
 | [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
 | [**claude-task-master**](claude-task-master_report.md) | MCP Server | Human-led / Tool-use | Local Filesystem | ✅ **Explicit** (Task List) | ✅ **Yes** (Selective Loading) |
 | [**cc-mirror**](cc-mirror_report.md) | Wrapper (CLI Patch) | Conductor Persona | Local Filesystem | ✅ **Yes** (Hidden Task Mode) | ✅ **Yes** (Worker Models) |
@@ -77,3 +78,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[CodeMachine](codemachine_report.md)**: CLI-native orchestration engine with state-machine workflows and TUI.
 *   **[MetaGPT](metagpt_report.md)**: Multi-agent framework simulating a software company with strict SOPs (Code = SOP(Team)).
 *   **[OWL](owl_report.md)**: GAIA benchmark #1 framework using Role-Playing (User + Assistant) for complex task automation.
+*   **[emdash](emdash_report.md)**: YC W26 backed desktop app supporting 15+ CLI providers with Git worktree isolation.
