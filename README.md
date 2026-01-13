@@ -2,6 +2,10 @@
 
 This repository contains detailed analysis reports for various AI coding agent orchestrators. The goal was to understand their architecture, planning capabilities, and how they handle autonomous operation.
 
+> **📊 [View Comprehensive Analysis →](COMPREHENSIVE_ANALYSIS.md)**  
+> Detailed breakdown of 30+ orchestrators on: Limit Handling, 24/7 Autonomy, Task Exhaustion, and Isolation.
+
+
 ## Summary Comparison Table
 
 | Orchestrator | Core Architecture | Planning Mechanism | Isolation | 24/7 Autonomy (Revival) | Limit Handling / Agent Swap |
