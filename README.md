@@ -21,6 +21,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**autogen**](autogen_report.md) | Framework (Py/.NET) | Group Chat / Swarm | Docker / Local | ✅ **Yes** (Loops + UserProxy) | ✅ **Yes** (Max Rounds / Tool Iterations) |
 | [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**superset**](superset_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
+| [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
 
 ## Detailed Reports
 
@@ -41,3 +42,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[autogen](autogen_report.md)**: Comprehensive framework for multi-agent conversational applications (Microsoft).
 *   **[crystal](crystal_report.md)**: Desktop manager for parallel Claude Code/Codex sessions using git worktrees.
 *   **[superset](superset_report.md)**: "Terminal for coding agents" - Desktop app for parallel agent execution using worktrees.
+*   **[OpenHands](openhands_report.md)**: Autonomous software development agent running in sandboxed Docker containers.
