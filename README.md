@@ -15,6 +15,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**Auto-Claude**](https://github.com/AndyMik90/Auto-Claude) | Python | Plan->Code Loop | Electron App | ✅ **Yes** (Graphiti Memory) | ✅ **Structured** (Subtasks) |
 | [**CodeMachine**](https://github.com/moazbuilds/CodeMachine-CLI) | TypeScript | State Machine Workflows | CLI (TUI) | ✅ **Yes** (Input/Context) | ✅ **Dynamic** (Tracks/Conditions) |
 | [**MetaGPT**](https://github.com/FoundationAgents/MetaGPT) | Python | SOP-based Software Company | CLI / Library | ✅ **Yes** (Shared Env) | ✅ **SOP-Driven** (Waterfall/Agile) |
+| [**OWL**](https://github.com/camel-ai/owl) | Python | Role-Playing (User+Asst.) | CLI / Web UI | ✅ **Yes** (15 Rounds) | ⚠️ **Round Limit** (15 per session) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -71,3 +72,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[Auto-Claude](auto-claude_report.md)**: Structured "Plan -> Code" framework with isolated workspaces and Graphiti memory.
 *   **[CodeMachine](codemachine_report.md)**: CLI-native orchestration engine with state-machine workflows and TUI.
 *   **[MetaGPT](metagpt_report.md)**: Multi-agent framework simulating a software company with strict SOPs (Code = SOP(Team)).
+*   **[OWL](owl_report.md)**: GAIA benchmark #1 framework using Role-Playing (User + Assistant) for complex task automation.
