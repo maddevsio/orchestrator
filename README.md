@@ -9,6 +9,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**Swarm**](https://github.com/parruda/swarm) | Ruby | Single-Process (Async) | SDK / CLI | ❌ **No** (Interactive) | ❌ **None** |
 | [**AutoCodeRover**](https://github.com/AutoCodeRoverSG/auto-code-rover) | Python | Specialize Repair Loop | Docker / Local | ✅ **Yes** (Iterative Repair) | N/A (Specialized Tool) |
 | [**SWE-agent**](https://github.com/SWE-agent/SWE-agent) | Python | ACI / ReAct Loop | Docker (SWEEnv) | ✅ **Yes** (Retry Loops) | N/A (One-Shot / Retry) |
+| [**swarms**](https://github.com/kyegomez/swarms) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -59,3 +60,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[Swarm](parruda_swarm_report.md)**: Ruby-based single-process orchestrator with semantic memory and workflows.
 *   **[AutoCodeRover](auto-code-rover_report.md)**: Autonomous repair tool with AST-aware search and iterative test-driven patching.
 *   **[SWE-agent](swe-agent_report.md)**: ACI-based agent for GitHub issues, using Docker containers for reproducible execution.
+*   **[swarms](swarms_report.md)**: Enterprise-grade framework with a massive library of architectures and a universal SwarmRouter.
