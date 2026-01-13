@@ -22,6 +22,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**crystal**](crystal_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**superset**](superset_report.md) | Desktop App (Electron) | Parallel Sessions | Git Worktrees | ✅ **Session-level** | ❌ **Manual** |
 | [**OpenHands**](openhands_report.md) | App & Framework | CodeAct (Event Loop) | Docker Containers | ✅ **Yes** (Built-in) | ✅ **Yes** (Configurable) |
+| [**claude-task-master**](claude-task-master_report.md) | MCP Server | Human-led / Tool-use | Local Filesystem | ✅ **Explicit** (Task List) | ✅ **Yes** (Selective Loading) |
 
 ## Detailed Reports
 
@@ -43,3 +44,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[crystal](crystal_report.md)**: Desktop manager for parallel Claude Code/Codex sessions using git worktrees.
 *   **[superset](superset_report.md)**: "Terminal for coding agents" - Desktop app for parallel agent execution using worktrees.
 *   **[OpenHands](openhands_report.md)**: Autonomous software development agent running in sandboxed Docker containers.
+*   **[claude-task-master](claude-task-master_report.md)**: MCP Server acting as a "Project Manager" for AI agents, maintaining state via structured task lists.
