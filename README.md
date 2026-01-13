@@ -12,6 +12,7 @@ This repository contains detailed analysis reports for various AI coding agent o
 | [**swarms**](https://github.com/kyegomez/swarms) | Python | Multi-Architecture (Router) | SDK / CLI | ✅ **Yes** (Many patterns) | ✅ **Dynamic** (SwarmRouter) |
 | [**ccswarm**](https://github.com/nwiizo/ccswarm) | Rust | Proactive Master / ACP | Binary / Claude Code | ✅ **Yes** (Dependnecy Graph) | ✅ **Predictive** (Pattern-based) |
 | [**Maestro**](https://github.com/pedramamini/Maestro) | TypeScript | Desktop App / Playbooks | Electron App | ✅ **Yes** (Auto Run Loops) | ❌ **Manual** (Playbooks) |
+| [**Auto-Claude**](https://github.com/AndyMik90/Auto-Claude) | Python | Plan->Code Loop | Electron App | ✅ **Yes** (Graphiti Memory) | ✅ **Structured** (Subtasks) |
 | [**crewAI**](crewAI_report.md) | Framework (Python) | Sequential & Hierarchical | Containers (Optional) | ✅ **Yes** (Flows support continuous state) | ⚠️ **Configurable** (No native usage-based swap) |
 | [**agents**](agents_report.md) | Plugins (Claude CLI) | Workflow Plugins | Host (Claude CLI) | ❌ **No** (Interactive/Plugin based) | ✅ **Tiered Models** (Opus/Sonnet/Haiku for cost) |
 | [**claude-flow**](claude-flow_report.md)| MCP Server (Python) | Hive-Mind Swarm | Host (or Cloud) | ✅ **Yes** (Persistent Hive-Mind sessions) | ✅ **Dynamic** (Agent Architecture re-assigns) |
@@ -65,3 +66,4 @@ For in-depth analysis of each repository, please refer to the individual reports
 *   **[swarms](swarms_report.md)**: Enterprise-grade framework with a massive library of architectures and a universal SwarmRouter.
 *   **[ccswarm](ccswarm_report.md)**: Rust-native orchestrator for Claude Code with "Proactive Master" and ACP integration.
 *   **[Maestro](maestro_report.md)**: Desktop app for orchestrating parallel AI agents with Auto Run playbooks and Git Worktree integration.
+*   **[Auto-Claude](auto-claude_report.md)**: Structured "Plan -> Code" framework with isolated workspaces and Graphiti memory.
